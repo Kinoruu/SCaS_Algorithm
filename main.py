@@ -23,9 +23,10 @@ width_pad = 2  # best possible choosed
 threshold = 245  # best possible choosed
 
 # searching all shapes in the input image
-no_gray = cv2.imread(filename='cambria_italic.png', flags=cv2.IMREAD_GRAYSCALE)
-pic2 = cv2.imread(filename='cambria_italic.png')
-gray = cv2.imread(filename='cambria_italic.png', flags=cv2.IMREAD_GRAYSCALE)
+path = 'd_arial_i.png'
+no_gray = cv2.imread(filename=path, flags=cv2.IMREAD_GRAYSCALE)
+pic2 = cv2.imread(filename=path)
+gray = cv2.imread(filename=path, flags=cv2.IMREAD_GRAYSCALE)
 gray = np.array(gray)
 height, width = gray.shape
 white = 0
